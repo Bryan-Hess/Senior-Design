@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/speed_percent_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="50%"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/speed_seekBar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.716" />
+
+    <SeekBar
+        android:id="@+id/speed_seekBar"
+        android:layout_width="242dp"
+        android:layout_height="20dp"
+        android:max="100"
+        android:min="1"
+        android:progress="50"
+        android:scaleX="1"
+        android:scaleY="1"
+        android:thumbTint="@color/purple_700"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.366"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.717" />
+
+    <TextView
+        android:id="@+id/thumb_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/index_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="68dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/middle_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.469"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/ring_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginEnd="96dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/pinky_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/hand_close_write"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="143dp"
+        android:layout_height="44dp"
+        android:background="@drawable/rounded_corner_purple"
+        android:text="Perform Exercise"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.94"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.918" />
+
+    <ImageView
+        android:id="@+id/handimage"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="250dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/hand" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="39dp"
+        android:layout_height="48dp"
+
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.994"
+        app:srcCompat="@drawable/logo" />
+
+    <ImageView
+        android:id="@+id/positionImg"
+        android:layout_width="44dp"
+        android:layout_height="42dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.986"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.645"
+        app:srcCompat="@drawable/fifty_hand" />
+
+    <ImageView
+        android:id="@+id/speedImg"
+        android:layout_width="44dp"
+        android:layout_height="42dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.986"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.73"
+        app:srcCompat="@drawable/rabbit" />
+
+    <ImageButton
+        android:id="@+id/pinky_button"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_centerInParent="true"
+        android:adjustViewBounds="true"
+        android:background="?android:attr/selectableItemBackground"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/handimage"
+        app:layout_constraintEnd_toEndOf="@+id/handimage"
+        app:layout_constraintHorizontal_bias="0.273"
+        app:layout_constraintStart_toStartOf="@+id/handimage"
+        app:layout_constraintTop_toTopOf="@+id/handimage"
+        app:layout_constraintVertical_bias="0.21"
+        app:srcCompat="@drawable/fingerprint" />
+
+    <ImageButton
+        android:id="@+id/thumb_button"
+        android:layout_width="31dp"
+        android:layout_height="33dp"
+        android:layout_centerInParent="true"
+        android:adjustViewBounds="true"
+        android:background="?android:attr/selectableItemBackground"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/handimage"
+        app:layout_constraintEnd_toEndOf="@+id/handimage"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toStartOf="@+id/handimage"
+        app:layout_constraintTop_toTopOf="@+id/handimage"
+        app:layout_constraintVertical_bias="0.42"
+        app:srcCompat="@drawable/fingerprint" />
+
+    <ImageButton
+        android:id="@+id/index_button"
+        android:layout_width="24dp"
+        android:layout_height="28dp"
+        android:layout_centerInParent="true"
+        android:adjustViewBounds="true"
+        android:background="?android:attr/selectableItemBackground"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/handimage"
+        app:layout_constraintEnd_toEndOf="@+id/handimage"
+        app:layout_constraintHorizontal_bias="0.567"
+        app:layout_constraintStart_toStartOf="@+id/handimage"
+        app:layout_constraintTop_toTopOf="@+id/handimage"
+        app:layout_constraintVertical_bias="0.15"
+        app:srcCompat="@drawable/fingerprint" />
+
+    <ImageButton
+        android:id="@+id/ring_button"
+        android:layout_width="24dp"
+        android:layout_height="28dp"
+        android:layout_centerInParent="true"
+        android:adjustViewBounds="true"
+        android:background="?android:attr/selectableItemBackground"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/handimage"
+        app:layout_constraintEnd_toEndOf="@+id/handimage"
+        app:layout_constraintHorizontal_bias="0.372"
+        app:layout_constraintStart_toStartOf="@+id/handimage"
+        app:layout_constraintTop_toTopOf="@+id/handimage"
+        app:layout_constraintVertical_bias="0.15"
+        app:srcCompat="@drawable/fingerprint" />
+
+    <ImageButton
+        android:id="@+id/middle_button"
+        android:layout_width="29dp"
+        android:layout_height="30dp"
+        android:layout_centerInParent="true"
+        android:adjustViewBounds="true"
+        android:background="?android:attr/selectableItemBackground"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/handimage"
+        app:layout_constraintEnd_toEndOf="@+id/handimage"
+        app:layout_constraintHorizontal_bias="0.475"
+        app:layout_constraintStart_toStartOf="@+id/handimage"
+        app:layout_constraintTop_toTopOf="@+id/handimage"
+        app:layout_constraintVertical_bias="0.12"
+        app:srcCompat="@drawable/fingerprint" />
+
+    <SeekBar
+        android:id="@+id/position_seekBar"
+        android:layout_width="242dp"
+        android:layout_height="20dp"
+        android:max="100"
+        android:min="1"
+        android:progress="50"
+        android:scaleX="1"
+        android:scaleY="1"
+        android:thumbTint="@color/purple_700"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.366"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.656" />
+
+    <TextView
+        android:id="@+id/pos_percent_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="50%"
+        app:layout_constraintBottom_toTopOf="@+id/speed_percent_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/position_seekBar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/pos_bar_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="Position"
+        app:layout_constraintBottom_toTopOf="@+id/speed_bar_text"
+        app:layout_constraintEnd_toStartOf="@+id/position_seekBar"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/speed_bar_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Speed"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/speed_seekBar"
+        app:layout_constraintHorizontal_bias="0.363"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.717" />
+
+    <EditText
+        android:id="@+id/custom_exercise_name"
+        style="@android:style/Widget.DeviceDefault.Light.EditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:text="Enter Custom Exercise Name..."
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.794" />
+
+    <Button
+        android:id="@+id/save_button"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:background="@drawable/rounded_corner_blue"
+        android:layout_width="76dp"
+        android:layout_height="44dp"
+        android:text="Save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.853"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.793" />
+
+    <Spinner
+        android:id="@+id/saved_select"
+
+        android:layout_width="212dp"
+        android:layout_height="43dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.914" />
+
+    <Switch
+        android:id="@+id/assistedSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="Assisted\nExercise\nMode"
+        android:thumbTint="@color/teal_700"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.025"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+</android.support.constraint.ConstraintLayout>
